@@ -1,21 +1,23 @@
-import '@styles/globals.css';
-import { Navbar } from '@components';
+import "@styles/globals.css";
+import { Navbar, Provider } from "@components";
 export const metadata = {
   title: "Let's Prompt",
-  description: 'Discover & Share AI-Powered Prompts.',
+  description: "Discover & Share AI-Powered Prompts.",
 };
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body>
-        <div className='main'>
-          <div className='gradient'></div>
-        </div>
-        <div className='app'>
-          <Navbar />
-          {children}
-        </div>
+        <Provider>
+          <div className="main">
+            <div className="gradient"></div>
+          </div>
+          <main className="app">
+            <Navbar />
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   );
