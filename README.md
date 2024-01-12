@@ -2,15 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-# Adding .env file in root directory
-
+### Adding .env file in the root directory
+```bash
 GOOGLE_ID=
 GOOGLE_CLIENT_SECRET=
 MONGODB_URI=
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_URL_INTERNAL=http://localhost:3000
 NEXTAUTH_SECRET=
-
+```
 First, run the development server:
 
 ```bash
