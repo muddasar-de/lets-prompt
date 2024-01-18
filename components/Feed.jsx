@@ -22,7 +22,7 @@ const Feed = () => {
 
   const PromptCardList = ({ data, handleTagClick }) => {
     return (
-      <div>
+      <div className="mt-10 prompt_layout">
         {data?.map((post) => (
           <PromptCard
             key={post._id}
